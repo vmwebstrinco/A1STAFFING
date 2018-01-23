@@ -23,8 +23,11 @@ open class EPSignatureViewController: UIViewController {
     var sig : String="";
     
     @IBOutlet weak var txt_first_name: UITextField!
-    // MARK: - Public Vars
     @IBOutlet weak var txt_last_name: UITextField!
+    @IBOutlet weak var txt_address: UITextField!
+    @IBOutlet weak var txt_email: UITextField!
+    @IBOutlet weak var txt_phome_number: UITextField!
+    
     open var showsDate: Bool = true
     open var showsSaveSignatureOption: Bool = true
     open weak var signatureDelegate: EPSignatureDelegate?
@@ -87,6 +90,10 @@ open class EPSignatureViewController: UIViewController {
         
         dataString = dataString + "&first_name=\(txt_first_name.text!)"
         dataString = dataString + "&last_name=\(txt_last_name.text!)"
+        dataString = dataString + "&main_phone=\(txt_phome_number.text!)"
+        dataString = dataString + "&main_email=\(txt_email.text!)"
+        dataString = dataString + "&address=\(txt_address.text!)"
+
         dataString = dataString + "&stringnature=\(sig)"
         
         let dataD = dataString.data(using: .utf8)
