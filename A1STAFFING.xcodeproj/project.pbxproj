@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6BE718E72019957900EB30AE /* DLRadioButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BE718E62019957900EB30AE /* DLRadioButton.m */; };
 		FA0ACF9D1FC92B36002816DC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0ACF9C1FC92B36002816DC /* AppDelegate.swift */; };
 		FA0ACFA21FC92B36002816DC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA0ACFA01FC92B36002816DC /* Main.storyboard */; };
 		FA0ACFA41FC92B36002816DC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA0ACFA31FC92B36002816DC /* Assets.xcassets */; };
@@ -36,6 +37,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6BE718E42019957800EB30AE /* A1STAFFING-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "A1STAFFING-Bridging-Header.h"; sourceTree = "<group>"; };
+		6BE718E52019957900EB30AE /* DLRadioButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLRadioButton.h; sourceTree = "<group>"; };
+		6BE718E62019957900EB30AE /* DLRadioButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DLRadioButton.m; sourceTree = "<group>"; };
 		FA0ACF991FC92B36002816DC /* A1STAFFING.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = A1STAFFING.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA0ACF9C1FC92B36002816DC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FA0ACFA11FC92B36002816DC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -104,11 +108,14 @@
 				FA0ACF9C1FC92B36002816DC /* AppDelegate.swift */,
 				FA0ACFA01FC92B36002816DC /* Main.storyboard */,
 				FA0ACFA31FC92B36002816DC /* Assets.xcassets */,
+				6BE718E52019957900EB30AE /* DLRadioButton.h */,
+				6BE718E62019957900EB30AE /* DLRadioButton.m */,
 				FA0ACFA51FC92B36002816DC /* LaunchScreen.storyboard */,
 				FA0ACFA81FC92B36002816DC /* Info.plist */,
 				FA0ACFCA1FC92C9A002816DC /* EPExtensions.swift */,
 				FA0ACFCC1FC92D03002816DC /* EPSignatureView.swift */,
 				FA0ACFCE1FC92D89002816DC /* EPSignatureViewController.swift */,
+				6BE718E42019957800EB30AE /* A1STAFFING-Bridging-Header.h */,
 			);
 			path = A1STAFFING;
 			sourceTree = "<group>";
@@ -199,6 +206,7 @@
 				TargetAttributes = {
 					FA0ACF981FC92B36002816DC = {
 						CreatedOnToolsVersion = 9.1;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 					};
 					FA0ACFAC1FC92B37002816DC = {
@@ -266,6 +274,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA0ACFCB1FC92C9A002816DC /* EPExtensions.swift in Sources */,
+				6BE718E72019957900EB30AE /* DLRadioButton.m in Sources */,
 				FA0ACFCF1FC92D89002816DC /* EPSignatureViewController.swift in Sources */,
 				FA0ACFCD1FC92D03002816DC /* EPSignatureView.swift in Sources */,
 				FA0ACF9D1FC92B36002816DC /* AppDelegate.swift in Sources */,
@@ -434,13 +443,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = U8BCP3M92K;
 				INFOPLIST_FILE = A1STAFFING/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = vmwebs.A1AGENCY;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "A1STAFFING/A1STAFFING-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -450,13 +462,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = U8BCP3M92K;
 				INFOPLIST_FILE = A1STAFFING/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = vmwebs.A1AGENCY;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "A1STAFFING/A1STAFFING-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

@@ -9,8 +9,8 @@
 import Foundation
 import UIKit
 
-open class EPSignatureView: UIView {
-    
+open class EPSignatureView: UIView{
+   
     // MARK: - Private Vars
     
     fileprivate var bezierPoints = [CGPoint](repeating: CGPoint(), count: 5)
@@ -136,7 +136,7 @@ open class EPSignatureView: UIView {
         return nil
     }
     
-    open func converAsBase64() -> String? {
+    open func converAsBase64() -> String? {        
         UIGraphicsBeginImageContext(CGSize(width: self.bounds.size.width, height: self.bounds.size.height))
         self.layer.render(in: UIGraphicsGetCurrentContext()!)
         let image: UIImage = UIGraphicsGetImageFromCurrentImageContext()!
